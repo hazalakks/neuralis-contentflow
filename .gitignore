@@ -1,0 +1,13 @@
+# Piper voice models (~120 MB, downloaded by scripts/build_media.py)
+voices/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+~$*.xlsx

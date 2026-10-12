@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEURALIS · CONTENTFLOW: AI-Powered Brand Content System</title>
+  <meta name="description" content="Case study: an end-to-end AI content production system for NEURALIS, a fictional focus-audio brand. Strategy, voice guide, 7-day calendar, blog, social, images, video, TTS and a documented fact-check.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { obsidian:'#0B0F14', surface:'#121820', surface2:'#1A222D', cyan:'#00F2FE', emerald:'#10B981', violet:'#8B5CF6' },
+      fontFamily: { sans:['Inter','sans-serif'], display:['"Space Grotesk"','sans-serif'] }
+    } } }
+  </script>
+  <style>
+    body { background:#0B0F14; color:#F8FAFC; }
+    .card { background:#121820; border:1px solid rgba(255,255,255,.08); border-radius:14px; }
+    .tab[aria-selected="true"] { background:#1A222D; color:#fff; border-color:rgba(0,242,254,.35); }
+    a.link { color:#00F2FE; text-decoration:underline; text-underline-offset:3px; }
+    table td, table th { vertical-align: top; }
+  </style>
+</head>
+<body class="font-sans min-h-screen selection:bg-cyan selection:text-black">
+
+<header class="sticky top-0 z-40 bg-obsidian/85 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
+    <a href="#overview" class="flex items-center gap-2.5">
+      <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan to-emerald grid place-items-center font-display font-bold text-black">N</span>
+      <span class="font-display font-bold tracking-wider">NEURALIS</span>
+      <span class="hidden sm:inline text-[11px] px-2 py-0.5 rounded-full border border-cyan/30 text-cyan">CONTENTFLOW</span>
+    </a>
+    <nav class="flex gap-1 text-sm overflow-x-auto" role="tablist">
+      <button class="tab px-3 py-1.5 rounded-lg border border-transparent text-slate-400 hover:text-white whitespace-nowrap" data-tab="overview">Overview</button>
+      <button class="tab px-3 py-1.5 rounded-lg border border-transparent text-slate-400 hover:text-white whitespace-nowrap" data-tab="strategy">Strategy</button>
+      <button class="tab px-3 py-1.5 rounded-lg border border-transparent text-slate-400 hover:text-white whitespace-nowrap" data-tab="calendar">Calendar</button>
+      <button class="tab px-3 py-1.5 rounded-lg border border-transparent text-slate-400 hover:text-white whitespace-nowrap" data-tab="content">Content</button>
+      <button class="tab px-3 py-1.5 rounded-lg border border-transparent text-slate-400 hover:text-white whitespace-nowrap" data-tab="review">Review</button>
+      <button class="tab px-3 py-1.5 rounded-lg border border-transparent text-slate-400 hover:text-white whitespace-nowrap" data-tab="process">Process</button>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-5 py-10">
+
+<!-- OVERVIEW -->
+<section data-pane="overview" class="space-y-10">
+  <div class="grid lg:grid-cols-5 gap-8 items-center">
+    <div class="lg:col-span-3">
+      <p class="text-cyan text-xs font-display uppercase tracking-[.2em] mb-3">Case study · AI Content Production</p>
+      <h1 class="font-display text-4xl sm:text-5xl font-bold leading-tight mb-5">An end-to-end, <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-emerald">AI-powered content system</span> for a focus-tech brand.</h1>
+      <p class="text-slate-300 leading-relaxed mb-6">CONTENTFLOW takes one brand, <strong>NEURALIS</strong> (a fictional neuro-adaptive focus-audio app), from strategy to a full week of multi-format content: blog, social, images, video and voice. Every output is checked against a one-page voice guide and a documented fact-check.</p>
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="px-3 py-1.5 rounded-lg bg-surface border border-white/10">RTF &amp; CO-STAR prompting</span>
+        <span class="px-3 py-1.5 rounded-lg bg-surface border border-white/10">AI image generation</span>
+        <span class="px-3 py-1.5 rounded-lg bg-surface border border-white/10">Neural TTS</span>
+        <span class="px-3 py-1.5 rounded-lg bg-surface border border-white/10">Scripted video (FFmpeg)</span>
+        <span class="px-3 py-1.5 rounded-lg bg-surface border border-white/10">Fact-check &amp; licence audit</span>
+      </div>
+    </div>
+    <div class="lg:col-span-2">
+      <video class="w-full max-w-[300px] mx-auto rounded-2xl border border-white/10 shadow-2xl shadow-cyan/10" src="assets/video/neuralis-teaser-9x16.mp4" poster="assets/video/neuralis-teaser-poster.jpg" controls playsinline preload="metadata"></video>
+      <p class="text-center text-xs text-slate-500 mt-2">18 s teaser · generated images + TTS + scripted edit</p>
+    </div>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="card p-5"><div class="font-display text-3xl font-bold text-cyan">7</div><div class="text-sm text-slate-400">days of planned content</div></div>
+    <div class="card p-5"><div class="font-display text-3xl font-bold text-emerald">5</div><div class="text-sm text-slate-400">formats: blog · social · image · video · voice</div></div>
+    <div class="card p-5"><div class="font-display text-3xl font-bold text-violet">4</div><div class="text-sm text-slate-400">peer-reviewed sources in the blog</div></div>
+    <div class="card p-5"><div class="font-display text-3xl font-bold text-amber-400">20</div><div class="text-sm text-slate-400">issues found &amp; fixed in review</div></div>
+  </div>
+
+  <div class="card p-6">
+    <h2 class="font-display text-lg font-bold mb-4">Brief requirements → deliverables</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="text-left text-slate-400 text-xs uppercase"><tr><th class="py-2 pr-4">Stage</th><th class="py-2 pr-4">Required</th><th class="py-2">Delivered</th></tr></thead>
+        <tbody class="divide-y divide-white/5 text-slate-300">
+          <tr><td class="py-2 pr-4">01 · Brand analysis</td><td class="py-2 pr-4">Sector, 3–5 competitors, identity card</td><td class="py-2"><a class="link" href="docs/01-brand-strategy.md">Brand strategy</a> (4 competitors)</td></tr>
+          <tr><td class="py-2 pr-4">02 · Voice &amp; strategy</td><td class="py-2 pr-4">Why-Who-What-How, personas, tone, 3–4 pillars</td><td class="py-2"><a class="link" href="docs/02-brand-voice-guide.md">Voice guide</a> + strategy</td></tr>
+          <tr><td class="py-2 pr-4">03 · Calendar &amp; formats</td><td class="py-2 pr-4">7-day calendar, blog, 3 RTF posts, 3 images, 15–20 s video, TTS</td><td class="py-2"><a class="link" href="docs/content-calendar.xlsx">Calendar (.xlsx)</a> + full content set</td></tr>
+          <tr><td class="py-2 pr-4">04 · Review</td><td class="py-2 pr-4">Tone, copyright, hallucination checks</td><td class="py-2"><a class="link" href="docs/04-content-review-log.md">Review log</a> (20 issues fixed)</td></tr>
+          <tr><td class="py-2 pr-4">Optional 01–04</td><td class="py-2 pr-4">Automation, control layer, reporting, docs</td><td class="py-2"><a class="link" href="docs/08-automation-and-reporting.md">Automation design</a>, <a class="link" href="docs/06-prompt-library.md">prompt library</a>, <a class="link" href="docs/05-ai-usage-report.md">AI report</a>, <a class="link" href="docs/07-team-playbook.md">playbook</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section data-pane="strategy" class="hidden space-y-6">
+  <h2 class="font-display text-2xl font-bold">Brand strategy</h2>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="card p-6 md:col-span-2">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-2">Positioning</p>
+      <p class="text-lg leading-relaxed">For knowledge workers who lose their best hours to constant switching, NEURALIS is the focus-audio platform that <strong>adapts to how you work</strong>, not just what time it is, so deep work becomes the default, not a fight.</p>
+      <p class="mt-4 text-sm text-slate-400">Values: Evidence over hype · Calm over urgency · Sustainable performance · Respect for attention</p>
+    </div>
+    <div class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-3">Personas</p>
+      <p class="text-sm"><strong>Deniz, 31</strong>, Senior Engineer: fragmented days, 4 pm brain fog.</p>
+      <p class="text-sm mt-3"><strong>Selin, 36</strong>, Co-founder: decision fatigue, wants a sustainable team focus culture.</p>
+    </div>
+  </div>
+  <div class="card p-6">
+    <p class="text-xs text-cyan uppercase tracking-widest mb-4">Competitors &amp; gaps</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
+      <div class="bg-surface2 rounded-lg p-4"><b>Brain.fm</b><p class="text-slate-400 mt-1">Research-backed functional music. Sessions are manual, not work-aware.</p></div>
+      <div class="bg-surface2 rounded-lg p-4"><b>Endel</b><p class="text-slate-400 mt-1">Adaptive to time, weather and heart rate. No work-context or team layer.</p></div>
+      <div class="bg-surface2 rounded-lg p-4"><b>Focus@Will</b><p class="text-slate-400 mt-1">Curated focus channels. Mostly static.</p></div>
+      <div class="bg-surface2 rounded-lg p-4"><b>Freedom</b><p class="text-slate-400 mt-1">Blocks distractions. Doesn't improve the working state.</p></div>
+    </div>
+  </div>
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-4">Palette</p>
+      <div class="grid grid-cols-5 gap-2 text-[11px] text-center">
+        <div><div class="h-12 rounded-lg border border-white/20" style="background:#0B0F14"></div>#0B0F14</div>
+        <div><div class="h-12 rounded-lg" style="background:#00F2FE"></div>#00F2FE</div>
+        <div><div class="h-12 rounded-lg" style="background:#10B981"></div>#10B981</div>
+        <div><div class="h-12 rounded-lg" style="background:#8B5CF6"></div>#8B5CF6</div>
+        <div><div class="h-12 rounded-lg" style="background:#F8FAFC"></div>#F8FAFC</div>
+      </div>
+      <p class="text-sm text-slate-400 mt-4">Type: <span class="font-display text-white">Space Grotesk</span> headlines · Inter body</p>
+    </div>
+    <div class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-4">Content pillars</p>
+      <ul class="space-y-2 text-sm">
+        <li class="flex justify-between"><span>1 · The Science of Focus</span><b class="text-cyan">35%</b></li>
+        <li class="flex justify-between"><span>2 · Deep Work Systems</span><b class="text-emerald">30%</b></li>
+        <li class="flex justify-between"><span>3 · Inside NEURALIS</span><b class="text-violet">20%</b></li>
+        <li class="flex justify-between"><span>4 · Sustainable Performance</span><b class="text-amber-400">15%</b></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card p-6">
+    <p class="text-xs text-cyan uppercase tracking-widest mb-3">Voice: "a calm neuroscientist who also ships software"</p>
+    <div class="grid sm:grid-cols-2 gap-4 text-sm">
+      <div><b class="text-emerald">✓ We say</b><p class="text-slate-300 mt-1">deep work · research suggests · designed to support · recovery</p></div>
+      <div><b class="text-red-400">✗ We never say</b><p class="text-slate-300 mt-1">hack your brain · 10x · miracle · cures · grind</p></div>
+    </div>
+    <a class="link text-sm mt-4 inline-block" href="docs/02-brand-voice-guide.md">Full one-page voice guide →</a>
+  </div>
+</section>
+
+<!-- CALENDAR -->
+<section data-pane="calendar" class="hidden space-y-5">
+  <div class="flex flex-wrap items-end justify-between gap-3">
+    <h2 class="font-display text-2xl font-bold">7-day content calendar</h2>
+    <a class="link text-sm" href="docs/content-calendar.xlsx">Download .xlsx</a>
+  </div>
+  <p class="text-slate-400 text-sm">Arc: trust → value → product → habit. The Wednesday blog is the hub every other piece links to.</p>
+  <div class="card overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-surface2 text-left text-xs uppercase text-slate-400"><tr><th class="p-3">Day</th><th class="p-3">Channel · Format</th><th class="p-3">Topic</th><th class="p-3">Why today</th></tr></thead>
+      <tbody class="divide-y divide-white/5 text-slate-300">
+        <tr><td class="p-3 font-bold text-white">Mon</td><td class="p-3">LinkedIn · RTF post</td><td class="p-3">The real cost of a "quick question"</td><td class="p-3">Planning day: open to systems</td></tr>
+        <tr><td class="p-3 font-bold text-white">Tue</td><td class="p-3">Instagram · 5-slide carousel</td><td class="p-3">Your brain at work: beta, alpha, theta</td><td class="p-3">Saveable explainer builds authority</td></tr>
+        <tr class="bg-cyan/5"><td class="p-3 font-bold text-cyan">Wed</td><td class="p-3">Blog · SEO article</td><td class="p-3">Cognitive fatigue isn't a willpower problem</td><td class="p-3">Evergreen hub mid-week</td></tr>
+        <tr><td class="p-3 font-bold text-white">Thu</td><td class="p-3">X · 6-post thread</td><td class="p-3">Why your focus playlist stops working</td><td class="p-3">Tech audience rewards depth</td></tr>
+        <tr><td class="p-3 font-bold text-white">Fri</td><td class="p-3">Reels/Shorts · 18 s video</td><td class="p-3">Your focus isn't broken. It's overloaded.</td><td class="p-3">Meets the Friday energy dip</td></tr>
+        <tr><td class="p-3 font-bold text-white">Sat</td><td class="p-3">Audio · TTS voiceover</td><td class="p-3">The One-Minute Neural Reset</td><td class="p-3">Weekend recovery</td></tr>
+        <tr><td class="p-3 font-bold text-white">Sun</td><td class="p-3">Email · digest</td><td class="p-3">Three rules for a clearer Monday</td><td class="p-3">Closes the weekly loop</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section data-pane="content" class="hidden space-y-8">
+  <h2 class="font-display text-2xl font-bold">Content set</h2>
+
+  <div class="grid md:grid-cols-3 gap-5">
+    <figure class="card overflow-hidden"><img src="assets/images/hero-workspace.jpg" alt="Dark minimalist workspace with a cyan soundwave on screen" class="w-full aspect-video object-cover"><figcaption class="p-4 text-sm"><b>Hero workspace</b> · 16:9<br><span class="text-slate-400">Blog cover &amp; website hero</span></figcaption></figure>
+    <figure class="card overflow-hidden"><img src="assets/images/brainwave-synapses.jpg" alt="Glowing cyan and emerald neurons with a soundwave" class="w-full aspect-video object-cover"><figcaption class="p-4 text-sm"><b>Brainwave synapses</b> · 1:1<br><span class="text-slate-400">Instagram carousel cover</span></figcaption></figure>
+    <figure class="card overflow-hidden"><img src="assets/images/product-mobile-concept.jpg" alt="Phone showing the NEURALIS app next to earbuds" class="w-full aspect-video object-cover"><figcaption class="p-4 text-sm"><b>Product concept</b> · 1:1<br><span class="text-slate-400">Video scene 3 &amp; launch posts</span></figcaption></figure>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-5">
+    <article class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-2">Blog · CO-STAR · ~1,050 words</p>
+      <h3 class="font-display text-xl font-bold mb-3">Cognitive Fatigue Isn't a Willpower Problem: How Sound Can Help You Get Back to Deep Work</h3>
+      <p class="text-sm text-slate-300 mb-3">When work is interrupted, it takes around <b>25 minutes</b> on average to get back to it (Mark, González &amp; Harris, 2005). The evidence on focus sound is <i>promising, not settled</i>, which is exactly why NEURALIS adapts instead of promising a magic frequency.</p>
+      <a class="link text-sm" href="content/blog-post.md">Read the full post + 4 sources →</a>
+    </article>
+    <article class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-2">LinkedIn · RTF</p>
+      <div class="bg-surface2 rounded-lg p-4 text-sm space-y-2 text-slate-200">
+        <p class="font-semibold text-white">A "quick question" is never quick for the person answering it.</p>
+        <p>In a field study of information workers, researchers at UC Irvine found that when work was interrupted, it took around 25 minutes on average to get back to it.</p>
+        <p>What's one rule your team uses to protect deep work?</p>
+        <p class="text-cyan text-xs">#DeepWork #FutureOfWork #EngineeringCulture</p>
+      </div>
+      <a class="link text-sm mt-3 inline-block" href="content/social-posts.md">All 3 posts with their RTF prompts →</a>
+    </article>
+  </div>
+
+  <div class="grid lg:grid-cols-2 gap-5">
+    <div class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-3">Voiceover · Piper neural TTS · 49.6 s</p>
+      <h3 class="font-display text-lg font-bold mb-3">The One-Minute Neural Reset</h3>
+      <audio class="w-full" controls preload="metadata" src="assets/audio/neural-reset-voiceover.mp3"></audio>
+      <p class="text-sm text-slate-400 italic mt-3">"You are not failing at focus. You are carrying too much at once. So for the next minute… carry less."</p>
+    </div>
+    <div class="card p-6">
+      <p class="text-xs text-cyan uppercase tracking-widest mb-3">Video storyboard · 18 s · 9:16</p>
+      <ol class="text-sm space-y-2 text-slate-300">
+        <li><b class="text-white">0–5 s</b> · YOUR FOCUS ISN'T BROKEN. <i class="text-slate-500">It's overloaded.</i></li>
+        <li><b class="text-white">5–10 s</b> · SILENCE THE NOISE. <i class="text-slate-500">One rhythm. One thought.</i></li>
+        <li><b class="text-white">10–15 s</b> · SOUND THAT ADAPTS TO YOU.</li>
+        <li><b class="text-white">15–18 s</b> · NEURALIS · Focus, by design.</li>
+      </ol>
+      <a class="link text-sm mt-3 inline-block" href="content/video-and-voiceover.md">Storyboard &amp; settings →</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW -->
+<section data-pane="review" class="hidden space-y-5">
+  <h2 class="font-display text-2xl font-bold">Review: what the AI got wrong, and how it was fixed</h2>
+  <p class="text-slate-400 text-sm max-w-3xl">Every finding below actually happened in this project. The first AI draft looked polished but contained invented or distorted statistics, overclaims, and an image with a real brand logo.</p>
+  <div class="card overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-surface2 text-left text-xs uppercase text-slate-400"><tr><th class="p-3">Draft said</th><th class="p-3">Problem</th><th class="p-3">Fix</th></tr></thead>
+      <tbody class="divide-y divide-white/5 text-slate-300">
+        <tr><td class="p-3">"23 min 15 s to refocus" (UC Irvine)</td><td class="p-3 text-amber-400">Interview figure, not the paper</td><td class="p-3">Peer-reviewed ~25 min (Mark et al., 2005)</td></tr>
+        <tr><td class="p-3">"2.1 hours lost per day"</td><td class="p-3 text-red-400">No source exists</td><td class="p-3">Removed</td></tr>
+        <tr><td class="p-3">"40% more fatigue &amp; errors"</td><td class="p-3 text-red-400">Distorted (original is a productivity estimate)</td><td class="p-3">Removed</td></tr>
+        <tr><td class="p-3">"Alpha state in 15 minutes"</td><td class="p-3 text-red-400">Unsupported efficacy claim</td><td class="p-3">Hedged: "research suggests…"</td></tr>
+        <tr><td class="p-3">Hinted at helping with ADHD / anxiety</td><td class="p-3 text-red-400">Medical claim</td><td class="p-3">Removed + disclaimer added</td></tr>
+        <tr><td class="p-3">Hero image v1</td><td class="p-3 text-amber-400">Real hardware brand on bezel</td><td class="p-3">Regenerated with "no logos" constraint</td></tr>
+        <tr><td class="p-3">Voice: CC BY-NC-SA dataset</td><td class="p-3 text-amber-400">Non-commercial licence</td><td class="p-3">Documented: portfolio use only</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <a class="link text-sm" href="docs/04-content-review-log.md">Full review log (20 issues, 24 checks) →</a>
+</section>
+
+<!-- PROCESS -->
+<section data-pane="process" class="hidden space-y-6">
+  <h2 class="font-display text-2xl font-bold">Process &amp; toolchain</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+    <div class="card p-5"><b class="text-cyan">Text</b><p class="text-slate-300 mt-1">Gemini (draft) → Claude (revision &amp; fact-check), via the Antigravity agent IDE</p></div>
+    <div class="card p-5"><b class="text-emerald">Images</b><p class="text-slate-300 mt-1">Antigravity built-in image generation (Google image model)</p></div>
+    <div class="card p-5"><b class="text-violet">Voice</b><p class="text-slate-300 mt-1">Piper TTS, en_US-ryan-high, offline &amp; open source</p></div>
+    <div class="card p-5"><b class="text-amber-400">Video</b><p class="text-slate-300 mt-1">FFmpeg, fully scripted in Python and rebuilt with one command</p></div>
+    <div class="card p-5"><b class="text-cyan">Calendar</b><p class="text-slate-300 mt-1">Python + openpyxl → .xlsx and .csv from one source</p></div>
+    <div class="card p-5"><b class="text-emerald">Automation</b><p class="text-slate-300 mt-1">Make / Zapier design: draft → checks → Slack approval → Buffer</p></div>
+  </div>
+  <div class="card p-6">
+    <p class="text-xs text-cyan uppercase tracking-widest mb-3">Most effective prompt change</p>
+    <p class="text-slate-300 text-sm">Adding a <b>source whitelist</b> to the blog prompt, <code class="text-cyan">"Verified sources you MAY use: … Do NOT introduce other statistics."</code>, stopped the model from inventing numbers.</p>
+  </div>
+  <div class="flex flex-wrap gap-3 text-sm">
+    <a class="link" href="docs/06-prompt-library.md">Prompt library</a>
+    <a class="link" href="docs/05-ai-usage-report.md">AI usage report</a>
+    <a class="link" href="docs/07-team-playbook.md">Team playbook</a>
+    <a class="link" href="docs/08-automation-and-reporting.md">Automation design</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-white/10 mt-16 py-8 text-center text-xs text-slate-500">
+  NEURALIS is a fictional concept brand created for the CONTENTFLOW final project (AI Content Production course, 2026). Not a medical device.
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('[data-tab]');
+  const panes = document.querySelectorAll('[data-pane]');
+  function show(id) {
+    if (![...panes].some(p => p.dataset.pane === id)) id = 'overview';
+    panes.forEach(p => p.classList.toggle('hidden', p.dataset.pane !== id));
+    tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.tab === id));
+    window.scrollTo(0, 0);
+  }
+  tabs.forEach(t => t.addEventListener('click', () => { location.hash = t.dataset.tab; }));
+  window.addEventListener('hashchange', () => show(location.hash.slice(1)));
+  show(location.hash.slice(1));
+</script>
+</body>
+</html>
