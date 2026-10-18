@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # NEURALIS · CONTENTFLOW
 
@@ -8,7 +8,7 @@
 
 [![Watch the 18 s teaser](assets/video/neuralis-teaser-poster.jpg)](assets/video/neuralis-teaser-9x16.mp4)
 
-[**▶ Teaser video**](assets/video/neuralis-teaser-9x16.mp4) · [**🔊 Voiceover**](assets/audio/neural-reset-voiceover.mp3) · [**🌐 Showcase site**](index.html) · [**📊 Calendar (.xlsx)**](docs/content-calendar.xlsx)
+[**▶ Teaser video**](assets/video/neuralis-teaser-9x16.mp4) · [**🔊 Voiceover**](assets/audio/neural-reset-voiceover.mp3) · [**🌐 Showcase site**](index.html) · [**📊 Calendar (.xlsx)**](docs/content-calendar.xlsx) · [**🖥 Deck (.pptx)**](presentation/NEURALIS-CONTENTFLOW.pptx)
 
 </div>
 
