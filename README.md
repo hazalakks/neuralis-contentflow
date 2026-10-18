@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 # NEURALIS · CONTENTFLOW
 
@@ -91,7 +91,7 @@ The first run downloads the Piper voice model (~120 MB) into `voices/` (git-igno
 │   ├── video/                  # 18 s teaser + poster frame
 │   ├── audio/                  # TTS voiceover
 │   └── screenshots/            # showcase screenshots (content-set evidence)
-├── presentation/               # Canva slide outline
+├── presentation/               # 12-slide deck (.pptx, Canva-importable)
 └── scripts/                    # reproducible media + calendar builds
 ```
 
