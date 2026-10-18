@@ -1,4 +1,4 @@
-"""
+﻿"""
 Builds the submission deck as an editable PowerPoint file that imports cleanly into Canva.
 
   python scripts/build_presentation.py
@@ -454,7 +454,7 @@ for i, st in enumerate(steps):
     tb(s, x + 0.35, 4.95, 1.65, 0.95, st.split("\n"), size=11, bold=True, align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE, space=0)
 rect(s, 0.6, 6.15, 12.13, 0.65, fill=SURF2, line=LINE)
 tb(s, 0.9, 6.15, 11.6, 0.65,
-   [[("GitHub  ", {"bold": True, "color": CYAN}), ("github.com/[username]/neuralis-contentflow", {"font": MONO}),
+   [[("GitHub  ", {"bold": True, "color": CYAN}), ("github.com/hazalakks/neuralis-contentflow", {"font": MONO}),
      ("      Full docs, prompt library, review log & reproducible media scripts", {"color": MUTED, "size": 11})]],
    size=13, anchor=MSO_ANCHOR.MIDDLE)
 

@@ -1,4 +1,4 @@
-# Submission Deck (Canva)
+﻿# Submission Deck (Canva)
 
 > The brief allows all deliverables to be combined into **one Canva presentation** and submitted as a share link.
 
@@ -10,8 +10,7 @@
 2. Canva converts it into an editable presentation. Fonts *Space Grotesk* and *Inter* are both available in Canva.
 3. **Slide 1:** replace `[Your Name]` with your name.
 4. **Slide 10:** if the video didn't come through the import, upload `assets/video/neuralis-teaser-9x16.mp4` and place it over the poster frame. Then upload `assets/audio/neural-reset-voiceover.mp3` (Uploads → Audio) and drop it onto the slide where the amber note says *"add … here in Canva"*. Delete the note.
-5. **Slide 12:** replace `[username]` with your GitHub username.
-6. **Share → Anyone with the link → Can view** → copy the link into the submission form.
+5. **Share → Anyone with the link → Can view** → copy the link into the submission form.
 
 ## Slide map
 
